@@ -1,8 +1,21 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Hello HomeController!
+{% endblock %}
 
 {% block body %}
 
 
+	<div class="text-center">
+		<h3>Veuillez remplir ce formulaire pour publier une annonce</h3>
+	</div>
+	{{ form_start(Webpack) }}
+	<div class="container w-75 bg-white">
+		<div class="form-group">
+			{{ form_widget(Webpack) }}
+
+		</div><br>
+		<button type="submit" class="btn btn-primary" style="position:relative; margin-left: 20px;">Publiez</button>
+	</div>
+	{{ form_end(Webpack) }}
 {% endblock %}
